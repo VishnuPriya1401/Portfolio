@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, scale=1.0">
+	<title>home</title>
+	<link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body>
+	<div class="container">
+		<div class="nav-bar">
+			<a href="home.html">
+				<img src="general-assets/logo.png" class="logo">
+			</a>
+			<nav>
+				<ul id="menulist">
+					<li><a href="home.html" id="clicked">Home</a></li>
+					<li><a href="about.html" id="not-clicked">About</a></li>
+                    <li><a href="projects.html" id="not-clicked">Projects</a></li>
+                    <li><a href="contact.html" id="not-clicked">Contact</a></li>
+				</ul>
+			</nav>
+			<img src="general-assets/menu.png" class="menu" onclick="togglemenu()">
+		</div>
+		<div class="content">
+			<div class="text">
+				<h3>Hi! I'm vishnupriya</h3>
+				<h1>UX Designer</h1>
+				<p>I'm an ambitious designer ready to start my new journey in this field. Eagerly waiting to learn more and explore more.</p>
+				<a href="resume.pdf" download="resume.pdf" class="resume">Resume</a>
+			</div>
+            <div class="image">
+            		<div id="top-border"></div>
+            	    <div id="profile">
+            		    <img src="general-assets/profile-square.jpg">
+            	    </div>
+            	    <div id="bottom-border"></div>
+            </div>
+		</div>
+	</div>
+
+	<script>
+		var menulist = document.getElementById('menulist')
+		menulist.style.maxHeight = "0px";
+		function togglemenu(){
+			if(menulist.style.maxHeight == "0px")
+			{
+				menulist.style.maxHeight = "130px"
+			}
+			else
+			{
+				menulist.style.maxHeight = "0px"
+			}
+		}
+	</script>
+</body>
+</html>

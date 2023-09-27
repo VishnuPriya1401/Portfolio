@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, scale=1.0">
+	<title>About page</title>
+	<link rel="stylesheet" type="text/css" href="about.css">
+</head>
+<body>
+	<div class="container">
+		<div class="nav-bar">
+			<a href="home.html">
+				<img src="general-assets/logo.png" class="logo">
+			</a>
+			<nav>
+				<ul id="menulist">
+					<li><a href="home.html" id="not-clicked">Home</a></li>
+					<li><a href="about.html" id="clicked">About</a></li>
+                    <li><a href="projects.html" id="not-clicked">Projects</a></li>
+                    <li><a href="contact.html" id="not-clicked">Contact</a></li>
+				</ul>
+			</nav>
+			<img src="general-assets/menu.png" class="menu" onclick="togglemenu()">
+		</div>
+		<div class="intro">
+			<div class="profile">
+				<img src="general-assets/profile.jpg">
+			</div>
+			<div class="intro-text">
+				<h2>Vishnupriya</h2>
+				<p>HI! I'm a UI/UX Designer, a beginner with some theoretical knowledge and looking for practical experience with a real-life project, to learn more about user experience, user testing, research findings and implementation of findings, typography, iconography, colors and its impact on the project with branding.</p>
+			</div>
+		</div>
+		<div class="dividor"></div>
+		<div class="info">
+			<div class="info-sec">
+				<h4>Education</h4>
+				<div class="bar"></div>
+				<p>B.Sc. Computer Science<br>Bishop Heber College,<br>Tamil Nadu, India.<br>(2019-2022)</p>
+			</div>
+			<div class="info-sec">
+				<h4>Internship</h4>
+				<div class="bar"></div>
+				<p>Project Trainee - ZOHO<br>Digital Marketing Department,<br>(5 months)</p>
+			</div>
+			<div class="info-sec">
+				<h4>Skills</h4>
+				<div class="bar"></div>
+				<p>
+					<ul>
+						<li>Microsoft Office</li>
+						<li>Html</li>
+						<li>CSS</li>
+						<li>Figma</li>
+						<li>Adobe XD</li>
+					</ul>
+				</p>
+			</div>
+		</div>
+	</div>
+	<script>
+		var menulist = document.getElementById('menulist')
+		menulist.style.maxHeight = "0px";
+		function togglemenu(){
+			if(menulist.style.maxHeight == "0px")
+			{
+				menulist.style.maxHeight = "130px"
+			}
+			else
+			{
+				menulist.style.maxHeight = "0px"
+			}
+		}
+	</script>
+</body>
+</html>

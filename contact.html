@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, scale=1.0">
+	<title>Contact</title>
+	<link rel="stylesheet" type="text/css" href="contact.css">
+</head>
+<body>
+	<div class="container">
+		<div class="nav-bar">
+			<a href="home.html">
+				<img src="general-assets/logo.png" class="logo">
+			</a>
+			<nav>
+				<ul id="menulist">
+					<li><a href="home.html" id="not-clicked">Home</a></li>
+					<li><a href="about.html" id="not-clicked">About</a></li>
+                    <li><a href="projects.html" id="not-clicked">Projects</a></li>
+                    <li><a href="contact.html" id="clicked">Contact</a></li>
+				</ul>
+			</nav>
+			<img src="general-assets/menu.png" class="menu" onclick="togglemenu()">
+		</div>
+		<div class="content">
+			<div class="text">
+				<h2>Lets get Connected</h2>
+				<p>I'm eagerly waiting to discuss about the project. Lets create products that's users friendly and are able to satisfy needs of all people.</p>
+			</div>
+			<form class="message" action="https://formsubmit.co/eakpriya14@gmail.com" method="POST">
+				<div class="msg-area">
+					<input type="text" name="name" required="required" placeholder="Your Name">
+				</div>
+				<div class="msg-area">
+					<input type="text" name="email" required="required" placeholder="Email id">
+				</div>
+				<div class="msg-area">
+					<input type="text" name="subject" required="required" placeholder="Subject">
+				</div>
+				<div class="msg-area">
+					<textarea required="required" name="message"placeholder="Your Message"></textarea>
+				</div>
+				<button type="submit">Send Message</button>
+			</form>
+		</div>
+		<div class="contact">
+			<ul>
+				<li><img src="general-assets/mail.png" id="icon"> eakpriya14@gmail.com</li>
+				<li><img src="general-assets/phone.png" id="icon"> 83000 59342</li>
+				<li><a href=""><img src="general-assets/linkedin.png" id="icon"> Vishnupriya Eakambaram</a></li>
+			</ul>
+		</div>
+	</div>
+	<script>
+		var menulist = document.getElementById('menulist')
+		menulist.style.maxHeight = "0px";
+		function togglemenu(){
+			if(menulist.style.maxHeight == "0px")
+			{
+				menulist.style.maxHeight = "130px"
+			}
+			else
+			{
+				menulist.style.maxHeight = "0px"
+			}
+		}
+	</script>
+</body>
+</html>

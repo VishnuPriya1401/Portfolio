@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, scale=1.0">
+	<title>Restaurant App</title>
+	<link rel="stylesheet" type="text/css" href="case-study-1.css">
+</head>
+<body>
+	<div class="container">
+		<div class="nav-bar">
+			<a href="home.html">
+				<img src="general-assets/logo.png" class="logo">
+			</a>
+			<nav>
+				<ul id="menulist">
+					<li><a href="home.html" id="not-clicked">Home</a></li>
+					<li><a href="about.html" id="not-clicked">About</a></li>
+                    <li><a href="projects.html" id="not-clicked">Projects</a></li>
+                    <li><a href="contact.html" id="not-clicked">Contact</a></li>
+				</ul>
+			</nav>
+			<img src="general-assets/menu.png" class="menu" onclick="togglemenu()">
+		</div>
+		<div class="hero-section">
+			<div class="hero-text">
+				<h3>Restaurant App</h3>
+				<p><span>Role:</span> UI Designer</p>
+				<p><span>Tool:</span> <img src="general-assets/figma.png"> Figma</p>
+				<p><span>Duration:</span> Feb 2023 - April 2023</p>
+			</div>
+			<div class="hero-img">
+				<img src="p1-mockup/home-delivery.jpg">
+				<img src="p1-mockup/dinning-1.jpg">
+			</div>
+		</div>
+		<div class="goal">
+			<h2>Goal of the Project</h2>
+			<p>Our food ordering app will allow users to book table in prior and placed orders using this restaurant app. The orders can also be placed using the calling option provided. Users can also set favorite dishes, easy navigation within the app.</p>
+			<p>This App is designed with the targeted audience - who use apps to order food, busy workers, who wish to book tables in prior.</p>
+		</div>
+		<div class="special">
+			<div class="special-img">
+				<img src="p1-mockup/history-name.jpg">
+				<img src="p1-mockup/cart.jpg">
+			</div>
+			<div class="special-text">
+				<h2>What's new in this Project</h2>
+				<h4>Easy repeat orders</h4>
+				<p>Just repeat your favorite orders by repeat order method, Easy and time saving. You can also tag the order by giving the menu a name and save for easy quick access.</p>
+			</div>
+		</div>
+		<div class="colour">
+			<div class="colour-heading">
+				<h2>Color palette</h2>
+			</div>
+			<div class="colour-info">
+				<img src="p1-mockup/colors.png">
+				<p>The reason for the colors chosen is that, blue with combination 0f white gives an elegant and delight date look to the app, which matches the restaurant’s date theme. To add slight variation in the color to show difference, the shades of colors are added.</p>
+			</div>
+		</div>
+        <div class="key">
+			<h2>Key Challenges of the App</h2>
+			<p>The Main idea of the App is to create a user friendly food ordering and table booking app for an restaurant. The key challenge is to create a menu tag for users to repeat their fav menu and tag it with a name. This app also has a calling feature for quick ordering for users who are busy and can only spend less time in ordering food.</p>
+		</div>
+		<div class="wireframe">
+			<h2>Sample Wireframes</h2>
+			<div class="wireframe-img">
+				<img src="p1-wireframe/wireframe-1.jpg">
+				<img src="p1-wireframe/wireframe-2.jpg">
+				<img src="p1-wireframe/wireframe-3.jpg">
+				<img src="p1-wireframe/wireframe-4.jpg">
+				<img src="p1-wireframe/wireframe-5.jpg">
+			</div>
+		</div>
+		<div class="research">
+			<div class="research-heading">
+				<h2>Changes made after testing</h2>
+			</div>
+			<div class="research-img">
+				<div class="img-set">
+					<img src="p1-wireframe/home-1.jpg">
+					<img src="p1-wireframe/home-2.jpg">
+				</div>
+				<div class="img-set">
+					<img src="p1-mockup/home-delivery.jpg">
+					<img src="p1-mockup/dinning-1.jpg">
+				</div>
+			</div>
+			<p>The theme of the app is change to dark blue (#212D44) with the combination of white it gives an elegant and date look to the app.</p>
+            <p>The navigation bar is set at the bottom with indication with the mild color(#61697A) for easy and quick navigation within the app.</p>
+            <p>Added an extra page to to look details about the hotel - location and the interior design before booking table. This includes and “Dine in“ option button and then book table.</p>
+		</div>
+		<div class="mockup">
+			<h2>Sample Mockups</h2>
+			<div class="mockup-img">
+				<img src="p1-mockup/sign-in.jpg">
+				<img src="p1-mockup/sign-up.jpg">
+				<img src="p1-mockup/home-delivery.jpg">
+				<img src="p1-mockup/dinning-1.jpg">
+				<img src="p1-mockup/menu-page.jpg">
+				<img src="p1-mockup/fav-page.jpg">
+				<img src="p1-mockup/cart.jpg">
+				<img src="p1-mockup/history-name.jpg">
+				<img src="p1-mockup/menu-bar.jpg">
+				<img src="p1-mockup/search.jpg">
+			</div>
+			<h4>Sample task link :<a href="https://www.figma.com/proto/MkmPIMKwcwEyVX49BHVEZE/Diya's-Kitchen?page-id=373%3A3307&type=design&node-id=373-3366&viewport=421%2C58%2C0.1&t=6lg6h4Vr3PrfDlAO-1&scaling=scale-down&starting-point-node-id=373%3A3308&mode=design">Click here</a></h4>	
+		</div>
+		<div class="comment">
+			<p class="contact">To Give feedback about this project <a href="contact.html">Contact Me</a>.</p>
+			<p class="back"><a href="projects.html">Back to Projects</a></p>
+		</div>
+	</div>
+
+	<script>
+		var menulist = document.getElementById('menulist')
+		menulist.style.maxHeight = "0px";
+		function togglemenu(){
+			if(menulist.style.maxHeight == "0px")
+			{
+				menulist.style.maxHeight = "130px"
+			}
+			else
+			{
+				menulist.style.maxHeight = "0px"
+			}
+		}
+	</script>
+</body>
+</html>

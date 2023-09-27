@@ -1,0 +1,159 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.container{
+	width: 80%;
+	margin: 10px auto;
+	min-height: 100vh;
+	padding-left: 8%;
+	padding-right: 8%;
+	overflow: hidden;
+}
+.nav-bar{
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+.logo{
+	width: 40px;
+	cursor: pointer;
+	margin: 30px 0;
+}
+.menu{
+	width: 30px;
+	cursor: pointer;
+	display: none;
+}
+nav{
+	flex: 1;
+	text-align: right;
+}
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 30px;
+}
+nav ul li a{
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 600;
+}
+#clicked{
+	color: #000A3E;
+}
+#not-clicked{
+	color: #5D627D;
+}
+#clicked:hover{
+	color: #DD6C05;
+}
+#not-clicked:hover{
+	color: #DD6C05;
+}
+.work{
+	display: flex;
+	width: 80%;
+	justify-content: space-between;
+	align-content: center;
+	margin: 50px auto;
+}
+.project{
+	margin: 20px 20px;
+	text-align: left;
+	position: relative;
+}
+.project-img{
+	width: 300px;
+	border: 1px solid #000A3E;
+	border-radius: 10px;
+}
+.project h3{
+	font-size: 30px;
+	color: #000A3E;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.project a{
+	font-size: 14px;
+	text-decoration: none;
+	color: #5D627D;
+}
+.project a img{
+	width: 16px;
+	height: 16px;
+}
+.project p{
+	font-size: 20px;
+	color: #5D627D;
+	margin-top: 25px;
+	max-width: 450px;
+}
+.bar{
+	width: 100%;
+	margin: 20px auto;
+	height: 2px;
+	border: none;
+	border-radius: 2px;
+	background-color: #000A3E;
+	display: none;
+}
+@media only screen and (max-width: 800px)
+{
+	nav ul{
+		width: 200px;
+		background: #000a3e;
+		position: absolute;
+		border-radius: 5px;
+		top: 75px;
+		right: 0;
+		z-index: 2;
+	}
+	nav ul li{
+		display: block;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	nav ul li a{
+		color: white;
+		font-weight: 100;
+	}
+	#clicked{
+		color: white;
+	}
+	#not-clicked{
+		color: white;
+	}
+	.menu{
+		display: block;
+	}
+	#menulist{
+		overflow: hidden;
+		transition: 0.5s;
+	}
+	.work{
+		flex-direction: column;
+		width: 80%;
+		margin: 30px auto;
+	}
+	.project{
+		margin-top: 40px;
+	}
+	.project h3{
+		font-size: 26px;
+	}
+	.project a{
+		font-size: 12px;
+	}
+	.project a img{
+		width: 12px;
+		height: 12px;
+	}
+	.project p{
+		font-size: 18px;
+	}
+	.bar{
+		display: block;
+	}
+}

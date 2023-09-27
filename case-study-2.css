@@ -1,0 +1,671 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.container{
+	width: 100%;
+	min-height: 100vh;
+	overflow: hidden;
+}
+.nav-bar{
+	width: 85%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
+.logo{
+	width: 40px;
+	cursor: pointer;
+	margin: 30px 0;
+}
+.menu{
+	width: 30px;
+	cursor: pointer;
+	display: none;
+}
+nav{
+	flex: 1;
+	text-align: right;
+}
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 30px;
+}
+nav ul li a{
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 600;
+}
+#clicked{
+	color: #000A3E;
+}
+#not-clicked{
+	color: #5D627D;
+}
+#clicked:hover{
+	color: #DD6C05;
+}
+#not-clicked:hover{
+	color: #DD6C05;
+}
+.hero-section{
+	background-color: #ECF4FF;
+	width: 100%;
+	padding: 50px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: left;
+}
+.hero-img{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 20px;
+}
+.hero-img #phone{
+	width: 150px;
+	height: 310px;
+	border: 1px solid #000A3E;
+	border-radius: 10px;
+	margin-right: 20px;
+}
+.hero-img #tab{
+	width: 290px;
+	height: 390px;
+	border: 1px solid #000A3E;
+	border-radius: 10px;
+	margin-right: 20px;
+}
+.hero-text{
+	margin-left: 60px;
+}
+.hero-text h3{
+	font-size: 38px;
+	color: #000A3E;
+	margin-bottom: 20px;
+}
+.hero-text p{
+	font-size: 20px;
+	color: #000A3E;
+	margin-top: 15px;
+}
+.hero-text p span{
+	font-weight: 600;
+	margin-right: 5px;
+}
+.hero-text img{
+	width: 14px;
+	border: none;
+	margin-right: 5px;
+}
+.goal{
+	width: 70%;
+	margin: 70px auto;
+	text-align: center;
+}
+.goal h2{
+	font-size: 32px;
+	color: #000A3E;
+	margin-bottom: 20px;
+}
+.goal p{
+	width: 70%;
+	margin: 20px auto;
+	font-size: 24px;
+	color: #000A3E;
+}
+.colour{
+	width: 80%;
+	margin: 80px auto;
+}
+.colour-heading{
+	text-align: left;
+}
+.colour-heading h2{
+	font-size: 32px;
+	color: #000A3E;
+	margin-bottom: 50px;
+}
+.colour-img{
+	text-align: center;
+}
+.colour-img img{
+	width: 400px;
+	height: 80px;
+	margin-bottom: 15px;
+	border: none;
+}
+.special{
+	width: 70%;
+	margin: 80px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.special-img{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 80px;
+}
+.special-img img{
+	width: 150px;
+	height: 310px;
+	border: 1px solid #000A3E;
+	border-radius: 10px;
+	margin-right: 20px;
+}
+.special-text{
+	text-align: center;
+	margin-right: 80px;
+}
+.special-text h2{
+	font-size: 32px;
+	color: #000A3E;
+	margin-bottom: 35px;
+}
+.special-text h4{
+	font-size: 22px;
+	color: #000A3E;
+	margin-bottom: 15px;
+}
+.special-text p{
+	font-size: 20px;
+	color: #000A3E;
+	margin-bottom: 20px;
+}
+.key{
+	width: 70%;
+	margin: 70px auto;
+	text-align: center;
+}
+.key h2{
+	font-size: 32px;
+	color: #000A3E;
+	margin-bottom: 20px;
+}
+.key p{
+	width: 70%;
+	margin: 20px auto;
+	font-size: 24px;
+	color: #000A3E;
+}
+.wireframe{
+	width: 80%;
+	margin: 80px auto;
+}
+.wireframe h2{
+	padding-top: 20px;
+	text-align: center;
+	font-size: 32px;
+	color: #000A3E;
+}
+.wireframe-img{
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	justify-content: center;
+	gap: 30px;
+	margin-top: 50px;
+	padding: 20px 20px;
+}
+.wireframe-img img{
+	width: 150px;
+	height: 310px;
+	border: 1px solid #000A3E;
+	border-radius: 10px;
+	margin-bottom: 60px;
+}
+.mockup{
+	width: 80%;
+	margin: 80px auto;
+	background-color: #ECF4FF;
+	border: none;
+	border-radius: 10px;
+}
+.mockup h2{
+	padding-top: 20px;
+	text-align: center;
+	font-size: 32px;
+	color: #000A3E;
+}
+.mockup h3{
+	padding-top: 20px;
+	text-align: left;
+	font-size: 28px;
+	color: #000A3E;
+	margin: 20px 20px;
+}
+.mockup-phone{
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	justify-content: center;
+	gap: 30px;
+	margin-top: 20px;
+	padding: 20px 20px;
+}
+.mockup-phone img{
+	width: 150px;
+	height: 310px;
+	border: 1px solid #000A3E;
+	border-radius: 10px;
+	margin-bottom: 60px;
+}
+.mockup-tab{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	justify-content: center;
+	gap: 20px;
+	margin-top: 20px;
+	padding: 20px 20px;
+}
+.mockup-tab img{
+	width: 290px;
+	height: 390px;
+	border: 1px solid #000A3E;
+	border-radius: 10px;
+	margin-bottom: 60px;
+}
+.mockup h6{
+	padding: 20px 50px;
+	font-size: 20px;
+	color: #000A3E;
+
+}
+.mockup h6 a{
+	cursor: pointer;
+	color: #000A3E;
+	font-size: 20px;
+	margin-bottom: 30px;
+	margin-left: 10px;
+}
+.learning{
+	width: 80%;
+	margin: 70px auto;
+	text-align: center;
+}
+.learning h2{
+	font-size: 32px;
+	color: #000A3E;
+	margin-bottom: 20px;
+}
+.learning p{
+	width: 80%;
+	margin: 20px auto;
+	font-size: 24px;
+	color: #000A3E;
+}
+.comment{
+	width: 80%;
+	margin: 60px auto;
+	font-size: 24px;
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+.contact p{
+	text-align: left;
+	color: #000A3E;
+	margin-top: 40px;
+}
+.contact a{
+	color: #000A3E;
+	cursor: pointer;
+	font-weight: 600;
+	margin-left: 15px;
+}
+.back{
+	text-align: right;
+}
+.back a{
+	text-decoration: none;
+	color: #000000;
+	cursor: pointer;
+	font-weight: 600;
+}
+
+@media only screen and (max-width 860px)
+{
+	.hero-section{
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-content: center;
+		padding: 50px 10px;
+	}
+	.hero-text{
+		margin-left: 0;
+		margin-bottom: 30px;
+	}
+	.hero-text h3{
+		font-size: 28px;
+	}
+	.hero-text p{
+		font-size: 18px;
+	}
+	.hero-text img{
+		width: 12px;
+	}
+	.hero-img #phone{
+		width: 140px;
+		height: 290px;
+	}
+	.hero-img #tab{
+		width: 230px;
+		height: 330px;
+	}
+	.goal{
+		width: 100%;
+		margin: 50px auto;
+	}
+	.goal h2{
+		font-size: 28px;
+	}
+	.goal p{
+		font-size: 20px;
+	}
+	.colour-heading h2{
+		font-size: 28px;
+	}
+	.colour-img img{
+		width: 300px;
+		height: 60px;
+	}
+	.special{
+		flex-direction: column;
+		width: 100%;
+		margin: 50px auto;
+	}
+	.special-img{
+		width: 80%;
+		margin: 10px auto;
+		justify-content: center;
+		align-items: center;
+	}
+	.special-img img{
+		width: 140px;
+		height: 290px;
+	}
+	.special-text{
+		width: 90%;
+		margin: 20px auto;
+	}
+	.special-text h2{
+		font-size: 28px;
+	}
+	.special-text h4{
+		font-size: 22px;
+	}
+	.special-text p{
+		font-size: 20px;
+	}
+	.key{
+		width: 100%;
+		margin: 50px auto;
+	}
+	.key h2{
+		font-size: 28px;
+	}
+	.key p{
+		font-size: 20px;
+	}
+	.wireframe{
+		width: 90%;
+	}
+	.wireframe h2{
+		font-size: 28px;
+	}
+	.wireframe-img{
+		padding: 20px 10px;
+		grid-template-columns: auto auto;
+		gap: 30px;
+		justify-content: center;
+		margin-top: 20px;
+	}
+	.wireframe-img img{
+		margin-bottom: 10px;
+		width: 140px;
+		height: 290px;
+	}
+	.mockup{
+		width: 90%;
+	}
+	.mockup h2{
+		font-size: 28px;
+	}
+	.mockup h6{
+		font-size: 22px;
+	}
+	.mockup h6 a{
+		font-size: 22px;
+	}
+	.mockup h3{
+		font-size: 26px;
+	}
+	.mockup-phone{
+		padding: 20px 10px;
+		grid-template-columns: auto auto;
+		gap: 30px;
+		justify-content: center;
+		margin-top: 20px;
+	}
+	.mockup-phone img{
+		margin-bottom: 10px;
+		width: 140px;
+		height: 290px;
+	}
+	.mockup-tab{
+		padding: 20px 10px;
+		grid-template-columns: auto;
+		gap: 10px;
+		justify-content: center;
+		margin-top: 20px;
+	}
+	.mockup-tab img{
+		margin-bottom: 10px;
+		width: 290px;
+		height: 390px;
+	}
+	.learning{
+		width: 100%;
+		margin: 50px auto;
+	}
+	.learning h2{
+		font-size: 26px;
+	}
+	.learning p{
+		font-size: 20px;
+	}
+	.comment{
+		font-size: 22px;
+	}
+}
+
+@media only screen and (max-width: 800px)
+{
+	nav ul{
+		width: 200px;
+		background: #000A3E;
+		position: absolute;
+		border-radius: 5px;
+		top: 75px;
+		right: 0;
+		z-index: 2;
+	}
+	nav ul li{
+		display: block;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	nav ul li a{
+		color: white;
+		font-weight: 100;
+	}
+	#clicked{
+		color: white;
+	}
+	#not-clicked{
+		color: white;
+	}
+	.menu{
+		display: block;
+	}
+	#menulist{
+		overflow: hidden;
+		transition: 0.5s;
+	}
+	.hero-section{
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-content: center;
+		padding: 50px 10px;
+	}
+	.hero-text{
+		margin-left: 0;
+		margin-bottom: 30px;
+	}
+	.hero-text h3{
+		font-size: 28px;
+	}
+	.hero-text p{
+		font-size: 16px;
+	}
+	.hero-text img{
+		width: 12px;
+	}
+	.hero-img #phone{
+		width: 140px;
+		height: 290px;
+	}
+	.hero-img #tab{
+		width: 230px;
+		height: 330px;
+	}
+	.goal{
+		width: 100%;
+		margin: 50px auto;
+	}
+	.goal h2{
+		font-size: 26px;
+	}
+	.goal p{
+		font-size: 18px;
+	}
+	.colour-heading h2{
+		font-size: 26px;
+	}
+	.colour-img img{
+		width: 300px;
+		height: 60px;
+	}
+	.special{
+		flex-direction: column;
+		width: 100%;
+		margin: 50px auto;
+	}
+	.special-img{
+		width: 80%;
+		margin: 10px auto;
+		justify-content: center;
+		align-items: center;
+	}
+	.special-img img{
+		width: 140px;
+		height: 290px;
+	}
+	.special-text{
+		width: 90%;
+		margin: 20px auto;
+	}
+	.special-text h2{
+		font-size: 28px;
+	}
+	.special-text h4{
+		font-size: 20px;
+	}
+	.special-text p{
+		font-size: 18px;
+	}
+	.key{
+		width: 100%;
+		margin: 50px auto;
+	}
+	.key h2{
+		font-size: 26px;
+	}
+	.key p{
+		font-size: 18px;
+	}
+	.wireframe{
+		width: 90%;
+	}
+	.wireframe h2{
+		font-size: 26px;
+	}
+	.wireframe-img{
+		padding: 20px 10px;
+		grid-template-columns: auto auto;
+		gap: 30px;
+		justify-content: center;
+		margin-top: 20px;
+	}
+	.wireframe-img img{
+		margin-bottom: 10px;
+		width: 140px;
+		height: 290px;
+	}
+	.mockup{
+		width: 90%;
+	}
+	.mockup h2{
+		font-size: 26px;
+	}
+	.mockup h6{
+		font-size: 20px;
+	}
+	.mockup h6 a{
+		font-size: 20px;
+	}
+	.mockup h3{
+		font-size: 24px;
+	}
+	.mockup-phone{
+		padding: 20px 10px;
+		grid-template-columns: auto auto;
+		gap: 30px;
+		justify-content: center;
+		margin-top: 20px;
+	}
+	.mockup-phone img{
+		margin-bottom: 10px;
+		width: 140px;
+		height: 290px;
+	}
+	.mockup-tab{
+		padding: 20px 10px;
+		grid-template-columns: auto;
+		gap: 10px;
+		justify-content: center;
+		margin-top: 20px;
+	}
+	.mockup-tab img{
+		margin-bottom: 10px;
+		width: 290px;
+		height: 390px;
+	}
+	.learning{
+		width: 100%;
+		margin: 50px auto;
+	}
+	.learning h2{
+		font-size: 26px;
+	}
+	.learning p{
+		font-size: 18px;
+	}
+	.comment{
+		font-size: 20px;
+	}
+
+}

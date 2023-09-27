@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, scale=1.0">
+	<title>Projects</title>
+	<link rel="stylesheet" type="text/css" href="projects.css">
+</head>
+<body>
+	<div class="container">
+		<div class="nav-bar">
+			<a href="home.html">
+				<img src="general-assets/logo.png" class="logo">
+			</a>
+			<nav>
+				<ul id="menulist">
+					<li><a href="home.html" id="not-clicked">Home</a></li>
+					<li><a href="about.html" id="not-clicked">About</a></li>
+                    <li><a href="projects.html" id="clicked">Projects</a></li>
+                    <li><a href="contact.html" id="not-clicked">Contact</a></li>
+				</ul>
+			</nav>
+			<img src="general-assets/menu.png" class="menu" onclick="togglemenu()">
+		</div>
+		<div class="work">
+			<div class="project">
+				<img src="general-assets/restaurant-app.jpg" class="project-img">
+				<h3>Restaurant App</h3>
+				<a href="case-study-1.html">case study <img src="general-assets/arrow.png"></a>
+				<p>This is an restaurant app, it allows user to book table and place orders of the restaurant.</p>
+				<div class="bar"></div>
+			</div>
+			<div class="project">
+				<img src="general-assets/drama-app.jpg" class="project-img">
+				<h3>Drama App</h3>
+				<a href="case-study-2.html">case study <img src="general-assets/arrow.png"></a>
+				<p>This is a drama app, which allows to watch Asian dramas and movies of language Korean, Thai, Chinese, Japanese.</p>
+				<div class="bar"></div>
+			</div>
+		</div>
+	</div>
+	<script>
+		var menulist = document.getElementById('menulist')
+		menulist.style.maxHeight = "0px";
+		function togglemenu(){
+			if(menulist.style.maxHeight == "0px")
+			{
+				menulist.style.maxHeight = "130px"
+			}
+			else
+			{
+				menulist.style.maxHeight = "0px"
+			}
+		}
+	</script>
+</body>
+</html>

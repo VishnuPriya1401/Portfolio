@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, scale=1.0">
+	<title>Drama App</title>
+	<link rel="stylesheet" type="text/css" href="case-study-2.css">
+</head>
+<body>
+	<div class="container">
+		<div class="nav-bar">
+			<a href="home.html">
+				<img src="general-assets/logo.png" class="logo">
+			</a>
+			<nav>
+				<ul id="menulist">
+					<li><a href="home.html" id="not-clicked">Home</a></li>
+					<li><a href="about.html" id="not-clicked">About</a></li>
+                    <li><a href="projects.html" id="not-clicked">Projects</a></li>
+                    <li><a href="contact.html" id="not-clicked">Contact</a></li>
+				</ul>
+			</nav>
+			<img src="general-assets/menu.png" class="menu" onclick="togglemenu()">
+		</div>
+		<div class="hero-section">
+			<div class="hero-img">
+				<img src="p2-mockup/phone-home.jpg" id="phone">
+				<img src="p2-mockup/tab-home-page.jpg" id="tab">
+			</div>
+			<div class="hero-text">
+				<h3>Drama App</h3>
+				<p><span>Role:</span> UI Designer</p>
+				<p><span>Tool:</span> <img src="general-assets/figma.png"> Figma</p>
+				<p><span>Duration:</span> May 2023 - Jul 2023</p>
+			</div>
+		</div>
+		<div class="goal">
+			<h2>Goal of the Project</h2>
+			<p>This Drama App allows users to view, download their favorite drama and movies of language Korean, Thai, Mandarin, Taiwanese. Users can also filter their search results according to their preference of the language and genre.</p>
+			<p>This App is designed with the targeted audience who loves watching Korean, Mandarin, Thai dramas and movies. This App targets the users with phone and tablet.</p>
+		</div>
+		<div class="colour">
+			<div class="colour-heading">
+				<h2>Color palette</h2>
+			</div>
+			<div class="colour-img">
+				<img src="p2-mockup/colours.png">
+			</div>
+		</div>
+		<div class="special">
+			<div class="special-text">
+				<h2>What's new in this Project</h2>
+				<h4>Quick Search Result</h4>
+				<p>By using the filtering option, users can filter their search results easily. It holds options like language and genre selection to get their prefered search results easy and quick.</p>
+			</div>
+			<div class="special-img">
+				<img src="p2-mockup/phone-home.jpg">
+				<img src="p2-mockup/phone-home.jpg">
+			</div>
+		</div>
+		<div class="key">
+			<h2>Key Challenges of the App</h2>
+			<p>This Drama App allows users to view, download their favorite drama and movies of language Korean, Thai, Mandarin, Taiwanese. Users can also filter their search results according to their preference of the language and genre.</p>
+			<p>This App is designed with the targeted audience who loves watching Asian dramas and movies of language Korean, Chinese, Thai and Japanese. This App targets the users with phone and tablet.</p>
+		</div>
+		<div class="wireframe">
+			<h2>Sample Wireframes</h2>
+			<div class="wireframe-img">
+				<img src="p2-wireframe/phone-home.jpg">
+				<img src="p2-wireframe/phone-menu.jpg">
+				<img src="p2-wireframe/phone-about.jpg">
+				<img src="p2-wireframe/phone-episode.jpg">
+				<img src="p2-wireframe/phone-review.jpg">
+			</div>
+		</div>
+			<div class="mockup">
+			<h2>Sample Mockups</h2>
+			<h3>Phone Mockup</h3>
+			<div class="mockup-phone">				
+				<img src="p2-mockup/phone-home.jpg">
+				<img src="p2-mockup/phone-drama-info.jpg">
+				<img src="p2-mockup/phone-about-page.jpg">
+				<img src="p2-mockup/phone-episode-page.jpg">
+				<img src="p2-mockup/phone-review-page.jpg">
+				<img src="p2-mockup/phone-menu-page.jpg">
+				<img src="p2-mockup/phone-search-page.jpg">
+				<img src="p2-mockup/phone-drama-play.jpg">
+				<img src="p2-mockup/phone-wishlist-page.jpg">
+				<img src="p2-mockup/phone-search-result.jpg">
+			</div>
+			<h6>Sample task link :<a href="https://www.figma.com/proto/vTwFQOB7td6YZjtIrnBwrA/AsianBird?page-id=947%3A1838&type=design&node-id=952-3691&viewport=672%2C327%2C0.16&t=HbYKnhxU6ckoyfhA-1&scaling=scale-down&starting-point-node-id=952%3A3691&mode=design">Click here</a></h4>
+			<h3>Tab Mockup</h3>
+			<div class="mockup-tab">
+				<img src="p2-mockup/tab-home-page.jpg">
+				<img src="p2-mockup/tab-drama-1-page.jpg">
+				<img src="p2-mockup/tab-drama-2-page.jpg">
+				<img src="p2-mockup/tab-actor-info-page.jpg">
+				<img src="p2-mockup/tab-menu-page.jpg">
+				<img src="p2-mockup/tab-search-page.jpg">
+			</div>	
+		</div>
+		<div class="learning">
+			<h2>What I learned from this project</h2>
+			<p>This App resembles most of the vedio playing app. I did research while designing the app, which holds reference from-MX player, and some drama websites like Viki app, kissasian. </p>
+			<p>To show differents and to add some more details which is not available in the orther apps, I added the filtering option which allows user to filter according to the language and genre of the drama, and can also pick age limit of the drama/ṁovie.</p>
+			<p>I also learned some prototype option with smart animation section, which gives smooth transition and holds the fixed content in its position (Task : while user looks for the information, episodes and reviews of the drama).</p>
+			<p>I learned how to create and use components and its variants for easy and quick alterations.</p>
+		</div>
+		<div class="comment">
+			<p class="contact">To Give feedback about this project <a href="contact.html">Contact Me</a>.</p>
+			<p class="back"><a href="projects.html">Back to Projects</a></p>
+		</div>
+	</div>
+	
+	<script>
+		var menulist = document.getElementById('menulist')
+		menulist.style.maxHeight = "0px";
+		function togglemenu(){
+			if(menulist.style.maxHeight == "0px")
+			{
+				menulist.style.maxHeight = "130px"
+			}
+			else
+			{
+				menulist.style.maxHeight = "0px"
+			}
+		}
+	</script>
+</body>
+</html>
